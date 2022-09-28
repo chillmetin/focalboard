@@ -17,7 +17,7 @@ func main() {
 	}
 
 	if _, err := os.Stat(filename); err == nil && !force {
-		// go.work already exists and force flag not specified
+		// go.work already exists and force flag is not specified
 		fmt.Fprintln(os.Stdout, "go.work already exists and -f (force) not specified; nothing to do.")
 		os.Exit(0)
 	}
